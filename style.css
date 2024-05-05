@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'ifood';
+    src: url(fontes/iFoodRCTextos-Bold.ttf) ;
+    src: url(fontes/iFoodRCTextos-Medium.ttf);
+    src: url(fontes/iFoodRCTextos-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ifood';
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F7F7F7;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.cabecalho img {
+    width: 90px;
+}
+
+.cabecalho nav {
+    display: flex;
+    align-items: center; 
+    margin: 23px 250px;
+}
+
+nav a {
+    text-decoration: none;
+    padding-left: 40px;
+    color: #2d2d2d;
+}
+
+.login {
+    margin-right: 300px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #EA1D2C;
+    padding: 0px 25px;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    background-color: #EA1D2C;
+    font-weight: bold;
+    color: #f2f2f2;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f13f4b;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    padding-top: 220px ;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: #3e3e3e;
+    background: url(https://static.ifood-static.com.br/image/upload/t_banner/webapp/landing/groceries-background-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    background-size: 100% auto;
+    
+}
+
+.endereco h1 {
+    font-size: 50px;
+}
+
+.endereco h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.textos {
+    display: flex;
+    align-items: center;
+    background-color: #ececec;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.bi-search {
+    color: #EA1D2C;
+    padding-left: 20px;
+}
+
+.texto {
+    border: none;
+    background-color: #ececec;
+    outline: 0;
+    text-indent: 10px;
+    margin-right: 30px;
+    width: 280px;
+    padding: 15px;
+}
+
+.comidas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    justify-content: center;
+}
+
+.comidas button {
+    background-color: transparent;
+    border: 1px solid rgb(233, 233, 233);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 20px;
+    color: #797979;
+}
+
+.comidas button:hover {
+    cursor: pointer;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background-color: #f7f7f7;
+}
+
+.restaurant {
+    background-color: #EA1D2C;
+    margin-right: 50px;
+    padding: 0;
+    width: 415px;
+    height: 220px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.restaurant img {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.restaurant p {
+    padding: 35px 20px;
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+}
+
+.market {
+    background-color: #B6D048;
+    width: 415px;
+    height: 220px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.market img {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.market p {
+    padding: 35px 20px;
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+}
+
+.options-r {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    border: none;
+    outline: none;
+    background-color: #CC1825;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.options-m {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    border: none;
+    outline: none;
+    background-color: #9EB53E;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.outros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bebidas {
+    text-align: center;
+    background-color: #f6d553;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 60px;
+}
+
+.drinks-png {
+    background-color: #F6D553;
+    position: absolute;
+}
+
+.farmacia {
+    text-align: center;
+    background-color: #F9879C;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 60px;
+    padding: 5px;
+}
+
+.petshop {
+    text-align: center;
+    background-color: #8C60C5;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 60px;
+    padding: 10px;
+}
+
+.titulo-restaurantes {
+    border-top: 2px solid #f2f2f2;
+    padding: 60px 0px 32px;
+    width: 1220px;
+    margin: auto;
+}
+
+.titulo-restaurantes h2 {
+    text-align: left;
+}
+
+.outros-restaurantes {
+    display: flex;
+    justify-content: center;
+}
+
+.outros-restaurantes img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.mcdonald {
+    display: flex;
+    margin: 10px;
+    padding: 30px 78px 30px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.mcdonald:hover {
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    cursor: pointer;
+}
+
+.mcdonald p {
+    padding-left: 10px;
+}
+
+.descricao {
+    color: #a0a0a0;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.hr2 {
+    width: 1220px;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    margin: 50px;
+}
+
+.mercado {
+    justify-content: left;
+    padding-left: 329px;
+}
