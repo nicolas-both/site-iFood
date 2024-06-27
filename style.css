@@ -46,7 +46,7 @@ nav a {
 
 .login a {
     text-decoration: none;
-    color: #EA1D2C;
+    color: #a89a15;
     padding: 0px 25px;
 }
 
@@ -163,6 +163,7 @@ nav a {
     border-radius: 20px;
     cursor: pointer;
     position: relative;
+    transition: 0.3s;
 }
 
 .restaurant img {
@@ -178,6 +179,11 @@ nav a {
     font-weight: bold;
 }
 
+.restaurant:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
+}
+
 .market {
     background-color: #B6D048;
     width: 415px;
@@ -185,6 +191,7 @@ nav a {
     border-radius: 20px;
     cursor: pointer;
     position: relative;
+    transition: 0.3s;
 }
 
 .market img {
@@ -198,6 +205,11 @@ nav a {
     font-size: 38px;
     color: white;
     font-weight: bold;
+}
+
+.market:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
 }
 
 .options-r {
@@ -241,6 +253,12 @@ nav a {
     cursor: pointer;
     position: relative;
     margin: 60px;
+    transition: 0.3s;
+}
+
+.bebidas:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
 }
 
 .drinks-png {
@@ -256,6 +274,12 @@ nav a {
     position: relative;
     margin: 60px;
     padding: 5px;
+    transition: 0.3s;
+}
+
+.farmacia:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
 }
 
 .petshop {
@@ -266,6 +290,12 @@ nav a {
     position: relative;
     margin: 60px;
     padding: 10px;
+    transition: 0.3s;
+}
+
+.petshop:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
 }
 
 .titulo-restaurantes {
